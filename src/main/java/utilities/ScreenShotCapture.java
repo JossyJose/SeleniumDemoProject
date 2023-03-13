@@ -17,9 +17,9 @@ public class ScreenShotCapture {
 		TakesScreenshot scrShot = (TakesScreenshot) driver;
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
 
-		File f1 = new File(System.getProperty("user.dir" )+ "\\Output\\Screenshots"); 
-		if (!f1.exists()) {
-			f1.mkdirs();
+		File file = new File(System.getProperty("user.dir" )+ "\\Output\\Screenshots"); 
+		if (!file.exists()) {
+			file.mkdirs();
 		}
 
 		String timeStamp = new SimpleDateFormat("yyyy-MM-dd").format(new Date());

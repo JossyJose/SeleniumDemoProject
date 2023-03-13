@@ -99,7 +99,6 @@ public class GeneralUtilities {
 	public String selectDynamicItem(List<WebElement> element, String itemName, String dynamicPath) {
 		String itemToDelete = null;
 		for (int i = 0; i < element.size(); i++) {
-			String text = element.get(i).getText();
 			if (element.get(i).getText().equals(itemName)) {
 				i = i + 1;
 				itemToDelete = dynamicPath;

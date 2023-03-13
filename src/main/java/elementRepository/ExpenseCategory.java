@@ -15,139 +15,141 @@ import utilities.GeneralUtilities;
 public class ExpenseCategory {
 
 	WebDriver driver;
-	GeneralUtilities gnrlUtl;
+	GeneralUtilities generalUtility;
 
 	public ExpenseCategory(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		gnrlUtl = new GeneralUtilities();
+		generalUtility = new GeneralUtilities();
 	}
 
 	// web elements
 
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/expense-category']//p[text()='Expense Category']")
-	WebElement expenseCtgy;
+	private WebElement expenseCtgy;
 
 	@FindBy(xpath = "//h1[text()='Expense Category']") 
-	WebElement expenseCtgyPageheading;
+	private WebElement expenseCtgyPageheading;
 
 	@FindBy(xpath = "//li[2]//p[contains(text(), 'Manage Expense')]") 
-	WebElement manageExpense;
+	private WebElement manageExpense;
 
 	@FindBy(xpath = "//a[@onclick='click_button(1)']") 
-	WebElement newButton;
+	private WebElement newButton;
 
 	@FindBy(xpath = "//a[@onclick='click_button(2)']") 
-	WebElement searchButton;
+	private WebElement searchButton;
 
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-warning']") 
-	WebElement resetButton;
+	private WebElement resetButton;
 
 	@FindBy(xpath = "//button[@name='Search' and @type='submit']") 
-	WebElement searchItem;
+	private WebElement searchItem;
 
 	@FindBy(xpath = "//input[@id='name']") 
-	WebElement expenseCategoryTitle;
+	private WebElement expenseCategoryTitle;
 
 	@FindBy(xpath = "//input[@id='un']") 
-	WebElement searchTitle;
+	private WebElement searchTitle;
 	
 	
 	@FindBy(xpath = "//input[@id='name']") 
-	WebElement editField;
+	private WebElement editField;
 	
 
 	@FindBy(xpath = "//button[@name='Create']") 
-	WebElement createNewExpenseCategoryButton;
+	private WebElement createNewExpenseCategoryButton;
 
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[1]") 
-	WebElement addedItem;
+	private WebElement addedItem;
 	
 	@FindBy(xpath = "//button[@name='Update']") 
-	WebElement updateItemBtn;
+	private WebElement updateItemBtn;
 	
 
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[2]//i[@class='fas fa-trash-alt']") 
-	WebElement deleteIcon;
+	private WebElement deleteIcon;
 	
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[2]//i[@class='fas fa-edit']") 
-	WebElement editIcon;
+	private WebElement editIcon;
 	
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") 
-	WebElement deleteSuccessAlert;
+	private WebElement deleteSuccessAlert;
 	
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") 
-	WebElement updateSuccessAlert;
+	private WebElement updateSuccessAlert;
 	
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[1]") 
-	List<WebElement> itemList = new ArrayList <WebElement>();
+	private List<WebElement> itemList = new ArrayList <WebElement>();
 
 	String dynamicpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[\" + i + \"]//td[2]//a[@class='btn btn-sm btn btn-danger btncss']";
 
 	public void clickmanageExpense() {
-		gnrlUtl.buttonClick(manageExpense);
+		generalUtility.buttonClick(manageExpense);
 	}
 
 	public void clickExpenseCategory() {
-		gnrlUtl.buttonClick(expenseCtgy);
+		generalUtility.buttonClick(expenseCtgy);
 	}
 
-	public String expenseCateogryPageHeading() {
-		return gnrlUtl.getElementText(expenseCtgyPageheading);
+	public String getExpenseCateogryPageHeading() {
+		return generalUtility.getElementText(expenseCtgyPageheading);
 	}
 
 	public void clickNewButton() {
-		gnrlUtl.buttonClick(newButton);
+		generalUtility.buttonClick(newButton);
 	}
 
 	public void clickSearchButton() {
-		gnrlUtl.buttonClick(searchButton);
+		generalUtility.buttonClick(searchButton);
 	}
 
-	public void clickItemSearch() {
-		gnrlUtl.buttonClick(searchItem);
+	public void clickItemSearch(String title) {
+		generalUtility.inputText(searchTitle, title);
+		generalUtility.buttonClick(searchItem);
 	}
 
-	public void enterTitle(String title) {
-		gnrlUtl.inputText(expenseCategoryTitle, title);
+//	public void enterTitle(String title) {
+//		gnrlUtl.inputText(expenseCategoryTitle, title);
+//	}
+
+//	public void inputSearchItem(String title) {
+//		gnrlUtl.inputText(searchTitle, title);
+//	}
+
+	public void createNewExpenseCategory(String title) {
+		generalUtility.inputText(expenseCategoryTitle, title);
+		generalUtility.buttonClick(createNewExpenseCategoryButton);
 	}
 
-	public void inputSearchItem(String title) {
-		gnrlUtl.inputText(searchTitle, title);
-	}
-
-	public void createNewExpenseCategory() {
-		gnrlUtl.buttonClick(createNewExpenseCategoryButton);
-	}
-
-	public String addedItemCheck() {
-		String val = gnrlUtl.getElementText(addedItem);
+	public String getAddedItemCheck() {
+		String val = generalUtility.getElementText(addedItem);
 		return val;
 	}
 
 	public void acceptDeleteAlert() {
-		gnrlUtl.acceptAlert(driver);
+		generalUtility.acceptAlert(driver);
 	}
 
-	public String successAlert() {
+	public String getSuccessAlert() {
 		return deleteSuccessAlert.getText();
 	}
 	
-	public String updateSuccessAlert() {
+	public String getUpdateSuccessAlert() {
 		return updateSuccessAlert.getText();
 	}
 
 	public String getNewButtonColor() {
-		return gnrlUtl.getBackgroundColor(newButton);
+		return generalUtility.getBackgroundColor(newButton);
 	}
 
 	public String getSearchButtonColor() {
-		return gnrlUtl.getBackgroundColor(searchButton);
+		return generalUtility.getBackgroundColor(searchButton);
 	}
 
 	public String getResetButtonColor() {
-		return gnrlUtl.getBackgroundColor(resetButton);
+		return generalUtility.getBackgroundColor(resetButton);
 	}
 	
 	public void clickEditIcon() {
@@ -156,25 +158,26 @@ public class ExpenseCategory {
 	
 
 	public void clearSearchField() {
-		gnrlUtl.clearField(editField);
+		generalUtility.clearField(editField);
 	}
 	
-	public void inputItemToUpdate(String newItem) {
-		gnrlUtl.inputText(editField, newItem);
-				
-	}			
-	public void clickUpdateItem() {
+//	public void inputItemToUpdate(String newItem) {
+//		gnrlUtl.inputText(editField, newItem);
+//				
+//	}			
+	public void clickUpdateItem(String newItem) {
+		generalUtility.inputText(editField, newItem);
 		updateItemBtn.click();
 	}
 	
 	public void selectItemToUpdate(String item) {
-		String dynamicPath = gnrlUtl.selectDynamicItem(itemList, item, dynamicpath);
+		String dynamicPath = generalUtility.selectDynamicItem(itemList, item, dynamicpath);
 		WebElement cellElement = driver.findElement(By.xpath(dynamicPath));
 		cellElement.click();
 	}
 
 	public void deleteItem(String itemName) {
-		String dynamicItemXpath = gnrlUtl.selectDynamicItem(itemList, itemName, dynamicpath);
+		String dynamicItemXpath = generalUtility.selectDynamicItem(itemList, itemName, dynamicpath);
 		WebElement cellElement = driver.findElement(By.xpath(dynamicItemXpath));
 		
 		cellElement.click();

@@ -10,49 +10,49 @@ import utilities.GeneralUtilities;
 public class HomePage {
 
 	WebDriver driver;
-	GeneralUtilities gnrlUtl;
+	GeneralUtilities generalUtilities;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		gnrlUtl = new GeneralUtilities();
+		generalUtilities = new GeneralUtilities();
 	}
 
 
 	@FindBy(xpath = "//a[text()='Home']") 
-	WebElement homepage;
+	private WebElement homepage;
 	
 	@FindBy(xpath = "//li[@class='nav-item dropdown']") 
-	WebElement UserDropdown;
+	private WebElement UserDropdown;
 	
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']") 
-	WebElement logoutButton;
+	private WebElement logoutButton;
 	
 	
 	@FindBy(xpath = "//li[@class='nav-item']//i[@class='fas fa-bars']") 
-	WebElement navBarIcon;
+	private WebElement navBarIcon;
 	
 	
 
 	public String getHomePageText() {
 		
-		String text = gnrlUtl.getElementText(homepage);
+		String text = generalUtilities.getElementText(homepage);
 		return text;
 	}
 	
 	public String getHomePageURL() {
-		String url= gnrlUtl.getPageURL(driver);
+		String url= generalUtilities.getPageURL(driver);
 		return url;
 	}
 	
 	public String getHomePageTitle() {
-		String url= gnrlUtl.getPageTitle(driver);
+		String url= generalUtilities.getPageTitle(driver);
 		return url;
 	}
 	
 	public void performLogout() {
-		gnrlUtl.buttonClick(UserDropdown);
-		gnrlUtl.buttonClick(logoutButton);	
+		generalUtilities.buttonClick(UserDropdown);
+		generalUtilities.buttonClick(logoutButton);	
 	}
 
 	

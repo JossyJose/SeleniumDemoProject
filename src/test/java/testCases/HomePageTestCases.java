@@ -3,6 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import BaseClass.BaseClass;
 import constants.Constants;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
@@ -10,37 +11,37 @@ import elementRepository.ManageExpenses;
 
 public class HomePageTestCases extends BaseClass {
 
-	LoginPage lp;
-	HomePage hp;
-	ManageExpenses me;
+	LoginPage loginPage;
+	HomePage homePage;
+	ManageExpenses manageExpenses;
 	
 
 	@Test(enabled = true)
 	public void verifyUserLogout() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		hp.performLogout();
-		String actual = lp.getSignInText();
-		String expected = Constants.expectedLogoutMsg;
-		Assert.assertEquals(actual, expected, "Logout successful");
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		homePage.performLogout();
+		String actualText = loginPage.getSignInText();
+		String expectedText = Constants.EXPECTED_LOGO_MESSAGE;
+		Assert.assertEquals(actualText, expectedText, "Logout successful");
 	}
 	
 	@Test(enabled = true)
 	public void verifyHomePageURL() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		String actual=hp.getHomePageURL();
-		Assert.assertEquals(actual, Constants.homePageURL, "::Page URL is same as expected");	
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		String actualText=homePage.getHomePageURL();
+		Assert.assertEquals(actualText, Constants.HOMEPAGE_URL, "::Page URL is same as expected");	
 	}
 	
 	@Test(enabled = true)
 	public void verifyHomePageTitle() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		lp.performLogin(Constants.userName, Constants.password);	
-		Assert.assertEquals(hp.getHomePageTitle(), Constants.expectedhomePageTitle, "::Page Title is same as expected");	
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);	
+		Assert.assertEquals(homePage.getHomePageTitle(), Constants.EXPECTED_HOMEPAGE_TITLE, "::Page Title is same as expected");	
 	}
 }
 

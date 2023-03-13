@@ -1,12 +1,7 @@
 package elementRepository;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,169 +15,172 @@ import utilities.GeneralUtilities;
 public class ManageExpenses {
 
 	WebDriver driver;
-	GeneralUtilities gnrlUtl;
-	ExplicitWait ew;
-	Actions obj;
+	GeneralUtilities generalUtility;
+	ExplicitWait explicitWait;
+	Actions actionObject;
 
 	public ManageExpenses(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		gnrlUtl = new GeneralUtilities();
-		ew = new ExplicitWait();
-		obj = new Actions(driver);
+		generalUtility = new GeneralUtilities();
+		explicitWait = new ExplicitWait();
+		actionObject = new Actions(driver);
 	}
 
 
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-expense']//p[text()='Manage Expense']")
-	WebElement ListExpenses;
+	private WebElement ListExpenses;
 
 	@FindBy(xpath = "//li[2]//a[@class='nav-link']//i[@class='nav-icon fas fa-money-bill-alt']") 
-	WebElement manageExpense;
+	private WebElement manageExpense;
 
 	@FindBy(xpath = "//a[@class='nav-link']//p[text()='Create Merchant']") 
-	WebElement createMerchant;
+	private WebElement createMerchant;
 
 	@FindBy(xpath = "//h1[text()='List Expense']") 
-	WebElement ListExpensePageHeading;
+	private WebElement ListExpensePageHeading;
 
 	@FindBy(xpath = "//h1[text()='Create Merchant']") 
-	WebElement createMerchantPageHeading;
+	private WebElement createMerchantPageHeading;
 
 	@FindBy(xpath = "//a[@class ='btn btn-rounded btn-danger']") 
-	WebElement newButton;
+	private WebElement newButton;
 
 	@FindBy(xpath = "//a[@class ='btn btn-rounded btn-primary']") 
-	WebElement searchButton;
+	private WebElement searchButton;
 
 	@FindBy(xpath = "//a[@class ='btn btn-rounded btn-warning']") 
-	WebElement resetButton;
+	private WebElement resetButton;
 
 	@FindBy(xpath = "//select[@id ='user_id']") 
-	WebElement userIdField;
+	private WebElement userIdField;
 
 	@FindBy(xpath = "//input[@id='ex_date']") 
-	WebElement dateField;
+	private WebElement dateField;
 
 	@FindBy(xpath = "//select[@id='ex_type']") 
-	WebElement expenseTypeField;
+	private WebElement expenseTypeField;
 
 	@FindBy(xpath = "//input[@id='amount']") 
-	WebElement amountField;
+	private WebElement amountField;
 
 	@FindBy(xpath = "//button[@name='create']") 
-	WebElement createBtn;
+	private WebElement createBtn;
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") 
-	WebElement CreateSuccessAlert;
+	private WebElement CreateSuccessAlert;
 
 	@FindBy(xpath = "//input[@name='userfile']")
-	WebElement chooseFileBtn;
+	private WebElement chooseFileBtn;
 
 	String filePath =System.getProperty("user.dir") + "\\src\\test\\resources\\Files\\SampleFile.docx";
 
 	public void loadManageExpense() {
-		gnrlUtl.buttonClick(manageExpense);
+		generalUtility.buttonClick(manageExpense);
 	}
 
 	public void loadListExpenses() {
-		gnrlUtl.buttonClick(ListExpenses);
+		generalUtility.buttonClick(ListExpenses);
 	}
 
 	public void loadCreateExpense() {
-		gnrlUtl.buttonClick(createMerchant);
+		generalUtility.buttonClick(createMerchant);
 	}
 
-	public String manageExpensesPageLoad() {
-		return gnrlUtl.getElementText(ListExpensePageHeading);
+	public String getManageExpensesPageLoad() {
+		return generalUtility.getElementText(ListExpensePageHeading);
 	}
 
-	public String createMerchantPageLoad() {
-		return gnrlUtl.getElementText(ListExpensePageHeading);
+	public String getCreateMerchantPageLoad() {
+		return generalUtility.getElementText(ListExpensePageHeading);
 	}
 
 	public String getNewBtnFontColor() {
-		return gnrlUtl.getBackgroundColor(newButton);
+		return generalUtility.getBackgroundColor(newButton);
 	}
 
 	public String getSearchBtnFontColor() {
-		return gnrlUtl.getBackgroundColor(searchButton);
+		return generalUtility.getBackgroundColor(searchButton);
 	}
 
 	public String getResetBtnFontColor() {
-		return gnrlUtl.getBackgroundColor(resetButton);
+		return generalUtility.getBackgroundColor(resetButton);
 	}
 
 	public String getNewBtnFontSize() {
-		return gnrlUtl.getFontSize(newButton);
+		return generalUtility.getFontSize(newButton);
 	}
 
 	public String getSearchBtnFontSize() {
-		return gnrlUtl.getFontSize(searchButton);
+		return generalUtility.getFontSize(searchButton);
 	}
 
 	public String getResetBtnFontsize() {
-		return gnrlUtl.getFontSize(resetButton);
+		return generalUtility.getFontSize(resetButton);
 	}
 
 	public void loadAddExpensePage() {
-		gnrlUtl.buttonClick(newButton);
+		generalUtility.buttonClick(newButton);
 	}
 
-	public boolean verifyUserNameFieldPresence() {
-		return gnrlUtl.elementPresence(userIdField);
+	public boolean isVerifyUserNameFieldPresence() {
+		return generalUtility.elementPresence(userIdField);
 	}
 
-	public boolean verifyDateFieldPresence() {
-		return gnrlUtl.elementPresence(dateField);
+	public boolean isVerifyDateFieldPresence() {
+		return generalUtility.elementPresence(dateField);
 	}
 
-	public boolean verifyExpenseTypeFieldPresence() {
-		return gnrlUtl.elementPresence(expenseTypeField);
+	public boolean isVerifyExpenseTypeFieldPresence() {
+		return generalUtility.elementPresence(expenseTypeField);
 	}
 
-	public boolean verifyAmountFieldPresence() {
-		return gnrlUtl.elementPresence(amountField);
+	public boolean isVerifyAmountFieldPresence() {
+		return generalUtility.elementPresence(amountField);
 	}
 
 	public void addUser(String user) {
-		gnrlUtl.selectDropDownValue(userIdField, user);
+		generalUtility.selectDropDownValue(userIdField, user);
 	}
 
 	public void addDate(String date) {
-		gnrlUtl.inputText(dateField, date);
+		generalUtility.inputText(dateField, date);
 	}
 
 	public void addAmount(String amt) {
-		gnrlUtl.inputText(amountField, amt);
+		generalUtility.inputText(amountField, amt);
 	}
 
 	public void addExpenseCategory(String expenseCtgryt) {
-		gnrlUtl.selectDropDownValue(expenseTypeField, expenseCtgryt);
+		generalUtility.selectDropDownValue(expenseTypeField, expenseCtgryt);
 	}
 
-	public void AddDetails(String user, String expenseCtgry, String amt) {
+//	public void AddDetails(String user, String expenseCtgry, String amt) {
+//		addUser(user);
+//		addExpenseCategory(expenseCtgry);
+//		addAmount(amt);
+//
+//	}
+
+	public void FileUpload(String user, String expenseCtgry, String amt) throws AWTException, InterruptedException {
+
 		addUser(user);
 		addExpenseCategory(expenseCtgry);
 		addAmount(amt);
-
-	}
-
-	public void FileUpload() throws AWTException, InterruptedException {
-
-		gnrlUtl.performFileUpload(chooseFileBtn, driver, filePath);
+		generalUtility.performFileUpload(chooseFileBtn, driver, filePath);
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver; // Scrolling using JavascriptExecutor
 		js.executeScript("window.scrollBy(0,380)");
 	
-		ew.presenceOfWebElementLocated(driver, "//button[@name='create']");
+		explicitWait.presenceOfWebElementLocated(driver, "//button[@name='create']");
 
 	}
 
 	public void createExpenseRecord() {
-		gnrlUtl.buttonClick(createBtn);
+		generalUtility.buttonClick(createBtn);
 	}
 
-	public String successAlert() {
+	public String getSuccessAlert() {
 		return CreateSuccessAlert.getText();
 	}
 

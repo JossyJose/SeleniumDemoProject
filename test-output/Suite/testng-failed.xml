@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrometest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Critical"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.ExpenseCategoryTestCases">
+      <class name="testCases.LoginTestCases">
         <methods>
-          <include name="EditExpenseCategory"/>
-          <include name="beforeMethod"/>
+          <include name="launch_Browser"/>
+          <include name="verifyLoginForValidUser"/>
+          <include name="launchBrowser"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.ExpenseCategoryTestCases -->
+      </class> <!-- testCases.LoginTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrometest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

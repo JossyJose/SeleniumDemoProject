@@ -1,4 +1,4 @@
-package testCases;
+package BaseClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,7 +12,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import constants.Constants;
@@ -22,17 +21,16 @@ import utilities.ScreenShotCapture;
 public class BaseClass {
 
 	public static WebDriver driver;
-	ScreenShotCapture sc;
+	ScreenShotCapture screenShotCapture;
 	Properties properties=new Properties();
-	FileInputStream fip;
+	FileInputStream fileInputStream;
 	
 	public BaseClass() {
 		try {
-			fip=new FileInputStream(Constants.CONFIG_FILE_PATH);
-			properties.load(fip);
+			fileInputStream=new FileInputStream(System.getProperty("user.dir")+"//src//main//resources//config.properties");
+			properties.load(fileInputStream);
 			
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 	}
@@ -60,6 +58,7 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true, enabled = false)
 	public void launch_Browser(String browser) {
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		String url= properties.getProperty("url");
 		initialize(browser, url);
 		
@@ -67,6 +66,7 @@ public class BaseClass {
 	
 	@BeforeMethod(alwaysRun = true, enabled = true)
 	public void launchBrowser() {
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		String browser= properties.getProperty("browser");
 		String url= properties.getProperty("url");
 		initialize(browser, url);
@@ -76,8 +76,8 @@ public class BaseClass {
 	@AfterMethod(alwaysRun = true)
 	public void afterMethod(ITestResult itestResult) throws IOException {
 		if (itestResult.getStatus() == ITestResult.FAILURE) {
-			sc = new ScreenShotCapture();
-			sc.captureScreenShotFailures(driver, itestResult.getName());
+			screenShotCapture = new ScreenShotCapture();
+			screenShotCapture.captureScreenShotFailures(driver, itestResult.getName());
 		}
 		driver.close();
 	}

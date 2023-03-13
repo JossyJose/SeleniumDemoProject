@@ -10,7 +10,7 @@ import utilities.GeneralUtilities;
 public class AdminUser {
 
 	WebDriver driver;
-	GeneralUtilities gnrlUtl = new GeneralUtilities();
+	GeneralUtilities generalUtilities = new GeneralUtilities();
 
 	public AdminUser(WebDriver driver) {
 
@@ -20,25 +20,25 @@ public class AdminUser {
 	}
 
 	@FindBy(xpath = "//p[text()='Admin Users']")
-	WebElement adminUser;
+	private WebElement adminUser;
 
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
-	WebElement newButton;
+	private WebElement newButton;
 
 	@FindBy(xpath = "//input[@id='username']")
-	WebElement userName;
+	private WebElement userName;
 
 	@FindBy(xpath = "//input[@id='password']")
-	WebElement passWord;
+	private WebElement passWord;
 
 	@FindBy(xpath = "//select[@id='user_type']")
-	WebElement userType;
+	private WebElement userType;
 
 	@FindBy(xpath = "//div//button[@name='Create']")
-	WebElement saveButton;
+	private WebElement saveButton;
 
 	@FindBy(xpath = "//div//table//tbody//tr[1]//td[2]")
-	WebElement userTypeSelected;
+	private WebElement userTypeSelected;
 
 	public void clickAdminUser() {
 		adminUser.click();
@@ -48,33 +48,36 @@ public class AdminUser {
 		newButton.click();
 	}
 
-	public void enterUserName(String uname) {
-		userName.sendKeys(uname);
-	}
+//	public void enterUserName(String uname) {
+//		userName.sendKeys(uname);
+//	}
 
 	public void enterPassword(String pword) {
 		passWord.sendKeys(pword);
 	}
 	
 	public void selectUserType(String utype) {
-		gnrlUtl.selectDropDownValue(userType, utype);
+		generalUtilities.selectDropDownValue(userType, utype);
 	}
 
-	public void clickSaveButton() {
+	public void clickSaveButton(String uname, String pword, String utype) {
+		userName.sendKeys(uname);
+		passWord.sendKeys(pword);
+		generalUtilities.selectDropDownValue(userType, utype);
 		saveButton.click();
 	}
 
 	public String getUserType() {
-		return gnrlUtl.getElementText(userTypeSelected);
+		return generalUtilities.getElementText(userTypeSelected);
 	}
 
 	public String getAdminUsersPageURL() {
-		return gnrlUtl.getPageURL(driver);
+		return generalUtilities.getPageURL(driver);
 
 	}
 
 	public String getAdminUsersPageTitle() {
-		return gnrlUtl.getPageTitle(driver);
+		return generalUtilities.getPageTitle(driver);
 
 	}
 

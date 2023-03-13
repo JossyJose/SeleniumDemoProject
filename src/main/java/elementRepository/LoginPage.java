@@ -10,36 +10,36 @@ import utilities.GeneralUtilities;
 public class LoginPage {
 
 	WebDriver driver;
-	GeneralUtilities gnrlUtl;
+	GeneralUtilities generalUtilities;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		gnrlUtl = new GeneralUtilities();
+		generalUtilities = new GeneralUtilities();
 	}
 
 
 	@FindBy(xpath = "//button[text()='Sign In']") 
-	WebElement SignInText;
+	private WebElement SignInText;
 
 	@FindBy(xpath = "//input[@name='username']") 
-	WebElement userName;
+	private WebElement userName;
 
 	@FindBy(xpath = "//input[@name='password']") 
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(xpath = "//button[text()='Sign In']") 
-	WebElement login;
+	private WebElement login;
 
 	@FindBy(xpath = "//div[contains(@class,'alert-danger')]") 
-	WebElement alertMsg;
+	private WebElement alertMsg;
 	
 	@FindBy(xpath = "//input[@id='remember']")
-	WebElement verificationOfRememberCheckBox;
+	private WebElement verificationOfRememberCheckBox;
 
 
 	public String getSignInText() {
-		return gnrlUtl.getElementText(SignInText);
+		return generalUtilities.getElementText(SignInText);
 	}
 
 	public void inputUsername(String user) {
@@ -65,12 +65,12 @@ public class LoginPage {
 	}
 
 	public String getSignInButtonColor() {
-		return gnrlUtl.getBackgroundColor(login);
+		return generalUtilities.getBackgroundColor(login);
 	}
 	
 	public boolean getRememberMe()
 	{
-	return gnrlUtl.isCheckboxEnabled(verificationOfRememberCheckBox);
+	return generalUtilities.isCheckboxEnabled(verificationOfRememberCheckBox);
 	}
 	
 

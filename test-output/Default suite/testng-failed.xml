@@ -6,10 +6,9 @@
       <class name="testCases.AdminUserTestCases">
         <methods>
           <include name="launch_Browser"/>
-          <include name="verifyCreateNewUser"/>
-          <include name="verifyAdminUserPageURL"/>
-          <include name="verifyAdminUserPageTitle"/>
           <include name="afterMethod"/>
+          <include name="launchBrowser"/>
+          <include name="verifyAdminUserPageURL"/>
         </methods>
       </class> <!-- testCases.AdminUserTestCases -->
     </classes>

@@ -3,6 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import BaseClass.BaseClass;
 import constants.Constants;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
@@ -10,72 +11,72 @@ import elementRepository.ManageProduct;
 
 public class ManageProductTestCases extends BaseClass {
 
-	LoginPage lp;
-	HomePage hp;
-	ManageProduct mp;
+	LoginPage loginPage;
+	HomePage homePage;
+	ManageProduct manageProduct;
 
 	@Test(enabled = true)
 	public void verifyManageProductTitle() {
-		lp = new LoginPage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		Assert.assertEquals(mp.getManagePdtPageTitle(), Constants.ManagePdtPageTitle,
+		loginPage = new LoginPage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		Assert.assertEquals(manageProduct.getManagePdtPageTitle(), Constants.MANAGEPRODUCTPAGE_TITLE,
 				"::Page Title is as expected");
 	}
 	
 	@Test(enabled = true)
 	public void verifyManageProductURL() {
-		lp = new LoginPage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		Assert.assertEquals(mp.getManagePdtPageURL(), Constants.ManagePdtPageURL,
+		loginPage = new LoginPage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		Assert.assertEquals(manageProduct.getManagePdtPageURL(), Constants.MANAGEPRODUCTPAGE_URL,
 				"::Page URL is as expected");
 
 	}
 
 	@Test(enabled = true)
 	public void verifyManageProductPageisLoaded() {
-		lp = new LoginPage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		Assert.assertEquals(mp.getManageProductPageText(), Constants.ManagePdtPageHeader, ":: Page is loaded");
+		loginPage = new LoginPage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		Assert.assertEquals(manageProduct.getManageProductPageText(), Constants.MANAGEPRODUCTPAGE_HEADER, ":: Page is loaded");
 	}
 
 	@Test(enabled = true)
 	public void verifyAddNewProductPageDefaultCheckboxValuesSelected() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		mp.loadAddNewPdtPage();
-		Assert.assertTrue(mp.unLimitedStockCheckboxStatus(), " Checkbox is selected by default");
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		manageProduct.loadAddNewPdtPage();
+		Assert.assertTrue(manageProduct.unLimitedStockCheckboxStatus(), " Checkbox is selected by default");
 	}
 	
 	@Test(enabled = true)
 	public void verifyAddNewProductPageDefaultRadioButtonValues() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		mp.loadAddNewPdtPage();
-		Assert.assertTrue(mp.ProductTypeDefaultValue(), ":: Radio button  Veg selected by default");
-		Assert.assertTrue(mp.PriceTypeDefaultValue(), "::Radio button Weight selected by default");
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		manageProduct.loadAddNewPdtPage();
+		Assert.assertTrue(manageProduct.ProductTypeDefaultValue(), ":: Radio button  Veg selected by default");
+		Assert.assertTrue(manageProduct.PriceTypeDefaultValue(), "::Radio button Weight selected by default");
 	}
 
 	@Test(enabled = true)
 	public void verifyProductSearchPageLoad() {
-		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		mp = new ManageProduct(driver);
-		lp.performLogin(Constants.userName, Constants.password);
-		mp.loadManageProductPage();
-		mp.loadSearchPage();
-		Assert.assertEquals(mp.getSearchPageTitleText(), Constants.ManagePdtPageSearchboxTitle,
+		loginPage = new LoginPage(driver);
+		homePage = new HomePage(driver);
+		manageProduct = new ManageProduct(driver);
+		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
+		manageProduct.loadManageProductPage();
+		manageProduct.loadSearchPage();
+		Assert.assertEquals(manageProduct.getSearchPageTitleText(), Constants.MANAGEPRODUCTPAGE_SEARCHBOX_TITLE,
 				"Product search page is opened");
 
 	}
