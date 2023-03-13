@@ -11,7 +11,7 @@ public class ExplicitWait {
 
 	
 	public void presenceOfWebElementLocated(WebDriver  driver, String locator){
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver,20);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 		
 	}

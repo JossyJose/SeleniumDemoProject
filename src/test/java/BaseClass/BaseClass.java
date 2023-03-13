@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -51,14 +52,13 @@ public class BaseClass {
 		}
 		driver.get(url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+		driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
 		
 	}
 	
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true, enabled = false)
 	public void launch_Browser(String browser) {
-		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		String url= properties.getProperty("url");
 		initialize(browser, url);
 		
@@ -66,7 +66,6 @@ public class BaseClass {
 	
 	@BeforeMethod(alwaysRun = true, enabled = true)
 	public void launchBrowser() {
-		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		String browser= properties.getProperty("browser");
 		String url= properties.getProperty("url");
 		initialize(browser, url);
