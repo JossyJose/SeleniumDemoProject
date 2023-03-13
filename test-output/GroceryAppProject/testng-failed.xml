@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [GroceryAppProject]">
+  <listeners>
+    <listener class-name="utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.ManageProductTestCases">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifyAddNewProductPageDefaultCheckboxValuesSelected"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.ManageExpensesTestCases">
+        <methods>
+          <include name="verifyAddExpenseFieldsPresence"/>
+          <include name="verifyManageExpensePageLoad"/>
+          <include name="verifyNewSearchResetButtonFontColor"/>
+          <include name="verifyNewSearchResetButtonFontSize"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAddNewExpenseRecord"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageExpensesTestCases -->
+      <class name="testCases.ExpenseCategoryTestCases">
+        <methods>
+          <include name="addNewExpenseCategory"/>
+          <include name="EditExpenseCategory"/>
+          <include name="deleteExpenseCategory"/>
+          <include name="verifyNewSearchResetButtonColors"/>
+          <include name="beforeMethod"/>
+          <include name="verifyExpenseCategoryPageIsLoaded"/>
+          <include name="afterMethod"/>
+          <include name="searchExpenseCategory"/>
+        </methods>
+      </class> <!-- testCases.ExpenseCategoryTestCases -->
+      <class name="testCases.HomePageTestCases">
+        <methods>
+          <include name="verifyUserLogout"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyHomePageURL"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.HomePageTestCases -->
+      <class name="testCases.AdminUserTestCases">
+        <methods>
+          <include name="verifyCreateNewUser"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.AdminUserTestCases -->
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="verifyLoginForValidUser"/>
+          <include name="verifyLoginForInValidUser"/>
+          <include name="verifySignInButtonText"/>
+          <include name="verifyLoginForInValidUserwithExcelDataProvider"/>
+          <include name="beforeMethod"/>
+          <include name="verifySignInButtonColor"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrometest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.ManageProductTestCases">
+        <methods>
+          <include name="verifyManageProductTitle"/>
+          <include name="verifyManageProductPageisLoaded"/>
+          <include name="verifyProductSearchPageLoad"/>
+          <include name="verifyAddNewProductPageDefaultRadioButtonValues"/>
+          <include name="beforeMethod"/>
+          <include name="verifyManageProductURL"/>
+          <include name="afterMethod"/>
+          <include name="verifyAddNewProductPageDefaultCheckboxValuesSelected"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.ManageExpensesTestCases">
+        <methods>
+          <include name="verifyAddExpenseFieldsPresence"/>
+          <include name="verifyManageExpensePageLoad"/>
+          <include name="verifyNewSearchResetButtonFontColor"/>
+          <include name="verifyNewSearchResetButtonFontSize"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAddNewExpenseRecord"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageExpensesTestCases -->
+      <class name="testCases.ExpenseCategoryTestCases">
+        <methods>
+          <include name="EditExpenseCategory"/>
+          <include name="verifyNewSearchResetButtonColors"/>
+          <include name="beforeMethod"/>
+          <include name="verifyExpenseCategoryPageIsLoaded"/>
+          <include name="afterMethod"/>
+          <include name="searchExpenseCategory"/>
+        </methods>
+      </class> <!-- testCases.ExpenseCategoryTestCases -->
+      <class name="testCases.AdminUserTestCases">
+        <methods>
+          <include name="verifyCreateNewUser"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.AdminUserTestCases -->
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="verifyLoginForInValidUser"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+    </classes>
+  </test> <!-- Chrometest(failed) -->
+</suite> <!-- Failed suite [GroceryAppProject] -->

@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  My Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>My Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 07 20:33:22 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>83 seconds (83447 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.EditExpenseCategory()'><b>EditExpenseCategory</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.addNewExpenseCategory()'><b>addNewExpenseCategory</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.deleteExpenseCategory()'><b>deleteExpenseCategory</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.searchExpenseCategory()'><b>searchExpenseCategory</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.ManageExpensesTestCases.verifyAddExpenseFieldsPresence()'><b>verifyAddExpenseFieldsPresence</b><br>Test class: testCases.ManageExpensesTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ManageExpensesTestCases@72a7c7e0</td></tr>
+<tr>
+<td title='testCases.ManageExpensesTestCases.verifyAddNewExpenseRecord()'><b>verifyAddNewExpenseRecord</b><br>Test class: testCases.ManageExpensesTestCases</td>
+<td></td>
+<td>3</td>
+<td>testCases.ManageExpensesTestCases@72a7c7e0</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyAddNewProductPageDefaultCheckboxValuesSelected()'><b>verifyAddNewProductPageDefaultCheckboxValuesSelected</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyAddNewProductPageDefaultRadioButtonValues()'><b>verifyAddNewProductPageDefaultRadioButtonValues</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>1</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyCheckBox()'><b>verifyCheckBox</b><br>Test class: testCases.LoginTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.verifyExpenseCategoryPageIsLoaded()'><b>verifyExpenseCategoryPageIsLoaded</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.HomePageTestCases.verifyHomePageTitle()'><b>verifyHomePageTitle</b><br>Test class: testCases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTestCases@3e92efc3</td></tr>
+<tr>
+<td title='testCases.HomePageTestCases.verifyHomePageURL()'><b>verifyHomePageURL</b><br>Test class: testCases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTestCases@3e92efc3</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForInValidUser()'><b>verifyLoginForInValidUser</b><br>Test class: testCases.LoginTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider()'><b>verifyLoginForInValidUserwithExcelDataProvider</b><br>Test class: testCases.LoginTestCases<br>Parameters: asdf, pppp</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider()'><b>verifyLoginForInValidUserwithExcelDataProvider</b><br>Test class: testCases.LoginTestCases<br>Parameters: neena, neena</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider()'><b>verifyLoginForInValidUserwithExcelDataProvider</b><br>Test class: testCases.LoginTestCases<br>Parameters: hana, hana</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider()'><b>verifyLoginForInValidUserwithExcelDataProvider</b><br>Test class: testCases.LoginTestCases<br>Parameters: $yamala, 12@1234</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifyLoginForValidUser()'><b>verifyLoginForValidUser</b><br>Test class: testCases.LoginTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.ManageExpensesTestCases.verifyManageExpensePageLoad()'><b>verifyManageExpensePageLoad</b><br>Test class: testCases.ManageExpensesTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageExpensesTestCases@72a7c7e0</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyManageProductPageisLoaded()'><b>verifyManageProductPageisLoaded</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyManageProductTitle()'><b>verifyManageProductTitle</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyManageProductURL()'><b>verifyManageProductURL</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.ExpenseCategoryTestCases.verifyNewSearchResetButtonColors()'><b>verifyNewSearchResetButtonColors</b><br>Test class: testCases.ExpenseCategoryTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ExpenseCategoryTestCases@1622f1b</td></tr>
+<tr>
+<td title='testCases.ManageExpensesTestCases.verifyNewSearchResetButtonFontColor()'><b>verifyNewSearchResetButtonFontColor</b><br>Test class: testCases.ManageExpensesTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageExpensesTestCases@72a7c7e0</td></tr>
+<tr>
+<td title='testCases.ManageExpensesTestCases.verifyNewSearchResetButtonFontSize()'><b>verifyNewSearchResetButtonFontSize</b><br>Test class: testCases.ManageExpensesTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageExpensesTestCases@72a7c7e0</td></tr>
+<tr>
+<td title='testCases.ManageProductTestCases.verifyProductSearchPageLoad()'><b>verifyProductSearchPageLoad</b><br>Test class: testCases.ManageProductTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.ManageProductTestCases@2e4b8173</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifySignInButtonColor()'><b>verifySignInButtonColor</b><br>Test class: testCases.LoginTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.LoginTestCases.verifySignInButtonText()'><b>verifySignInButtonText</b><br>Test class: testCases.LoginTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTestCases@703580bf</td></tr>
+<tr>
+<td title='testCases.HomePageTestCases.verifyUserLogout()'><b>verifyUserLogout</b><br>Test class: testCases.HomePageTestCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomePageTestCases@3e92efc3</td></tr>
+</table><p>
+</body>
+</html>

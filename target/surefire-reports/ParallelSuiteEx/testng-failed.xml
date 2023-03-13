@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [ParallelSuiteEx]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="ParallelExecution3(failed)" verbose="0">
+    <classes>
+      <class name="testCases.HomePageTestCases">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="verifyUserLogout"/>
+          <include name="launchBrowser"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyHomePageURL"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.HomePageTestCases -->
+      <class name="testCases.ExpenseCategoryTestCases">
+        <methods>
+          <include name="addNewExpenseCategory"/>
+          <include name="launch_Browser"/>
+          <include name="launchBrowser"/>
+          <include name="EditExpenseCategory"/>
+          <include name="deleteExpenseCategory"/>
+          <include name="verifyNewSearchResetButtonColors"/>
+          <include name="verifyExpenseCategoryPageIsLoaded"/>
+          <include name="afterMethod"/>
+          <include name="searchExpenseCategory"/>
+        </methods>
+      </class> <!-- testCases.ExpenseCategoryTestCases -->
+    </classes>
+  </test> <!-- ParallelExecution3(failed) -->
+  <test thread-count="4" parallel="tests" name="ParallelExecution2(failed)" verbose="0">
+    <classes>
+      <class name="testCases.ManageExpensesTestCases">
+        <methods>
+          <include name="verifyAddExpenseFieldsPresence"/>
+          <include name="launch_Browser"/>
+          <include name="verifyManageExpensePageLoad"/>
+          <include name="launchBrowser"/>
+          <include name="verifyNewSearchResetButtonFontColor"/>
+          <include name="verifyNewSearchResetButtonFontSize"/>
+          <include name="verifyAddNewExpenseRecord"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageExpensesTestCases -->
+      <class name="testCases.ManageProductTestCases">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="verifyManageProductTitle"/>
+          <include name="launchBrowser"/>
+          <include name="verifyManageProductPageisLoaded"/>
+          <include name="verifyProductSearchPageLoad"/>
+          <include name="verifyAddNewProductPageDefaultRadioButtonValues"/>
+          <include name="verifyManageProductURL"/>
+          <include name="afterMethod"/>
+          <include name="verifyAddNewProductPageDefaultCheckboxValuesSelected"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCases -->
+    </classes>
+  </test> <!-- ParallelExecution2(failed) -->
+  <test thread-count="4" parallel="tests" name="ParallelExecution1(failed)" verbose="0">
+    <classes>
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="verifyLoginForValidUser"/>
+          <include name="verifyLoginForInValidUser"/>
+          <include name="verifySignInButtonText"/>
+          <include name="launchBrowser"/>
+          <include name="verifyLoginForInValidUserwithExcelDataProvider"/>
+          <include name="verifySignInButtonColor"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.AdminUserTestCases">
+        <methods>
+          <include name="launch_Browser"/>
+          <include name="launchBrowser"/>
+          <include name="verifyCreateNewUser"/>
+          <include name="verifyAdminUserPageURL"/>
+          <include name="verifyAdminUserPageTitle"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.AdminUserTestCases -->
+    </classes>
+  </test> <!-- ParallelExecution1(failed) -->
+</suite> <!-- Failed suite [ParallelSuiteEx] -->
