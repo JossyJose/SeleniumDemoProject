@@ -87,7 +87,7 @@ public class ExpenseCategoryTestCases extends BaseClass {
 		String expectedAlertMessage ="×\n"
 				+ "Alert!\n"
 				+ "Category Updated Successfully";
-		Assert.assertEquals(actualAlertMessage, expectedAlertMessage, "::Item not updated");	
+		Assert.assertEquals(actualAlertMessage, expectedAlertMessage, "::Item updated");	
 	
 	}
 
@@ -100,16 +100,16 @@ public class ExpenseCategoryTestCases extends BaseClass {
 		expenseCategory.clickExpenseCategory();
 
 		SoftAssert softAssertNew = new SoftAssert();
-		softAssertNew.assertEquals(expenseCategory.getNewButtonColor(), "rgba(220, 53, 69, 1)",
-				"New Button color is as expected");
+		softAssertNew.assertEquals(expenseCategory.getNewButtonColor(), Constants.NEW_BUTTON_COLOR,
+				Constants.BUTTON_COLOR_MESSAGE);
 
 		SoftAssert softAssertSearch = new SoftAssert();
-		softAssertSearch.assertEquals(expenseCategory.getSearchButtonColor(), "rgba(0, 123, 255, 1)",
-				"Search Button color is as expected");
+		softAssertSearch.assertEquals(expenseCategory.getSearchButtonColor(), Constants.SEARCH_BUTTON_COLOR,
+				Constants.BUTTON_COLOR_MESSAGE);
 
 		SoftAssert softassertReset = new SoftAssert();
-		softassertReset.assertEquals(expenseCategory.getResetButtonColor(), "rgba(255, 193, 7, 1)",
-				"Reset button color is as expected");
+		softassertReset.assertEquals(expenseCategory.getResetButtonColor(), Constants.RESET_BUTTON_COLOR,
+				Constants.BUTTON_COLOR_MESSAGE);
 
 	}
 

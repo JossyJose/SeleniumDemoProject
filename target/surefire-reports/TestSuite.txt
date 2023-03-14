@@ -1,307 +1,448 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 56, Failures: 29, Errors: 0, Skipped: 26, Time elapsed: 1,585.456 s <<< FAILURE! - in TestSuite
-testCases.HomePageTestCases.verifyHomePageTitle  Time elapsed: 0.721 s  <<< FAILURE!
+Tests run: 65, Failures: 39, Errors: 0, Skipped: 26, Time elapsed: 87.509 s <<< FAILURE! - in TestSuite
+testCases.HomePageTestCases.verifyHomePageTitle  Time elapsed: 0.499 s  <<< FAILURE!
+java.lang.AssertionError: ::Page Title is same as expected expected [Dashboard | 7rmart supermarket] but found [Login | 7rmart supermarket]
+	at testCases.HomePageTestCases.verifyHomePageTitle(HomePageTestCases.java:44)
+
+testCases.ManageExpensesTestCases.verifyAddExpenseFieldsPresence  Time elapsed: 0.502 s  <<< FAILURE!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.178)
+  (Session info: chrome=111.0.5563.64)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a432c83ef9fa11175b4cd08be5108840, clickElement {id=936385ec-546e-48ce-997f-6803785058ef}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49736/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a432c83ef9fa11175b4cd08be5108840)] -> xpath: //button[text()='Sign In']]
-Session ID: a432c83ef9fa11175b4cd08be5108840
-	at testCases.HomePageTestCases.verifyHomePageTitle(HomePageTestCases.java:42)
+Command: [8725d8f996ced836fd394b6941e2af66, clickElement {id=8a28ba1c-6ad2-476c-8beb-a0eed07ee3ca}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60589/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8725d8f996ced836fd394b6941e2af66)] -> xpath: //button[text()='Sign In']]
+Session ID: 8725d8f996ced836fd394b6941e2af66
+	at testCases.ManageExpensesTestCases.verifyAddExpenseFieldsPresence(ManageExpensesTestCases.java:64)
 
-testCases.ManageExpensesTestCases.verifyAddExpenseFieldsPresence  Time elapsed: 0.722 s  <<< FAILURE!
+testCases.AdminUserTestCases.verifyAdminUserPageTitle  Time elapsed: 0.503 s  <<< FAILURE!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.178)
+  (Session info: chrome=111.0.5563.64)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a432c83ef9fa11175b4cd08be5108840, clickElement {id=936385ec-546e-48ce-997f-6803785058ef}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49736/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a432c83ef9fa11175b4cd08be5108840)] -> xpath: //button[text()='Sign In']]
-Session ID: a432c83ef9fa11175b4cd08be5108840
-	at testCases.ManageExpensesTestCases.verifyAddExpenseFieldsPresence(ManageExpensesTestCases.java:63)
-
-testCases.AdminUserTestCases.verifyAdminUserPageTitle  Time elapsed: 5.664 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Admin Users']"}
-  (Session info: chrome=110.0.5481.178)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a432c83ef9fa11175b4cd08be5108840, findElement {using=xpath, value=//p[text()='Admin Users']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49736/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a432c83ef9fa11175b4cd08be5108840
+Command: [8725d8f996ced836fd394b6941e2af66, clickElement {id=8a28ba1c-6ad2-476c-8beb-a0eed07ee3ca}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60589/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8725d8f996ced836fd394b6941e2af66)] -> xpath: //button[text()='Sign In']]
+Session ID: 8725d8f996ced836fd394b6941e2af66
 	at testCases.AdminUserTestCases.verifyAdminUserPageTitle(AdminUserTestCases.java:32)
 
-testCases.AdminUserTestCases.afterMethod[[TestResult name=verifyAdminUserPageTitle status=FAILURE method=AdminUserTestCases.verifyAdminUserPageTitle()[pri:0, instance:testCases.AdminUserTestCases@40cb8df7] output={null}]](0)  Time elapsed: 6.403 s  <<< FAILURE!
+testCases.AdminUserTestCases.afterMethod[[TestResult name=verifyAdminUserPageTitle status=FAILURE method=AdminUserTestCases.verifyAdminUserPageTitle()[pri:0, instance:testCases.AdminUserTestCases@e1de817] output={null}]](0)  Time elapsed: 1.089 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a432c83ef9fa11175b4cd08be5108840, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49736/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a432c83ef9fa11175b4cd08be5108840
+Command: [8725d8f996ced836fd394b6941e2af66, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60589/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8725d8f996ced836fd394b6941e2af66
 
-testCases.ManageExpensesTestCases.afterMethod[[TestResult name=verifyAddExpenseFieldsPresence status=FAILURE method=ManageExpensesTestCases.verifyAddExpenseFieldsPresence()[pri:0, instance:testCases.ManageExpensesTestCases@1eb5174b] output={null}]](0)  Time elapsed: 6.403 s  <<< FAILURE!
+testCases.ManageExpensesTestCases.afterMethod[[TestResult name=verifyAddExpenseFieldsPresence status=FAILURE method=ManageExpensesTestCases.verifyAddExpenseFieldsPresence()[pri:0, instance:testCases.ManageExpensesTestCases@69e1dd28] output={null}]](0)  Time elapsed: 1.089 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a432c83ef9fa11175b4cd08be5108840, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49736/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a432c83ef9fa11175b4cd08be5108840
+Command: [8725d8f996ced836fd394b6941e2af66, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60589/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8725d8f996ced836fd394b6941e2af66
 
-testCases.HomePageTestCases.launchBrowser  Time elapsed: 10.858 s  <<< FAILURE!
+testCases.HomePageTestCases.verifyHomePageURL  Time elapsed: 0.333 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86fe1d310e220c5a78a13320352703ac, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49818/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 86fe1d310e220c5a78a13320352703ac
+Command: [2413416bb9c8f5576c72d4d3f97b2296, findElement {using=xpath, value=//input[@name='password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60662/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2413416bb9c8f5576c72d4d3f97b2296
+	at testCases.HomePageTestCases.verifyHomePageURL(HomePageTestCases.java:34)
 
-testCases.HomePageTestCases.afterMethod[[TestResult name={null} status=CREATED method=HomePageTestCases.verifyHomePageURL()[pri:0, instance:testCases.HomePageTestCases@41fecb8b] output={null}]](0)  Time elapsed: 10.868 s  <<< FAILURE!
+testCases.ManageExpensesTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageExpensesTestCases.verifyAddNewExpenseRecord()[pri:0, instance:testCases.ManageExpensesTestCases@69e1dd28] output={null}]](0)  Time elapsed: 0.335 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86fe1d310e220c5a78a13320352703ac, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49818/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 86fe1d310e220c5a78a13320352703ac
+Command: [2413416bb9c8f5576c72d4d3f97b2296, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60662/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2413416bb9c8f5576c72d4d3f97b2296
 
-testCases.AdminUserTestCases.launchBrowser  Time elapsed: 11.266 s  <<< FAILURE!
+testCases.HomePageTestCases.afterMethod[[TestResult name=verifyHomePageURL status=FAILURE method=HomePageTestCases.verifyHomePageURL()[pri:0, instance:testCases.HomePageTestCases@a3d8174] output={null}]](0)  Time elapsed: 0.337 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86fe1d310e220c5a78a13320352703ac, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49818/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 86fe1d310e220c5a78a13320352703ac
+Command: [2413416bb9c8f5576c72d4d3f97b2296, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60662/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2413416bb9c8f5576c72d4d3f97b2296
 
-testCases.AdminUserTestCases.afterMethod[[TestResult name={null} status=CREATED method=AdminUserTestCases.verifyAdminUserPageURL()[pri:0, instance:testCases.AdminUserTestCases@40cb8df7] output={null}]](0)  Time elapsed: 11.266 s  <<< FAILURE!
+testCases.HomePageTestCases.afterMethod[[TestResult name={null} status=CREATED method=HomePageTestCases.verifyUserLogout()[pri:0, instance:testCases.HomePageTestCases@a3d8174] output={null}]](0)  Time elapsed: 3.895 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86fe1d310e220c5a78a13320352703ac, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49818/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 86fe1d310e220c5a78a13320352703ac
+Command: [ba2865ac099b81f458d3faf00ba9f8e7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60743/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba2865ac099b81f458d3faf00ba9f8e7
 
-testCases.AdminUserTestCases.launchBrowser  Time elapsed: 31.142 s  <<< FAILURE!
+testCases.AdminUserTestCases.afterMethod[[TestResult name={null} status=CREATED method=AdminUserTestCases.verifyCreateNewUser()[pri:0, instance:testCases.AdminUserTestCases@e1de817] output={null}]](0)  Time elapsed: 3.896 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99d4d4df6067b60ff3ccf22eea39af2a, setTimeout {implicit=5000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49905/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99d4d4df6067b60ff3ccf22eea39af2a
+Command: [ba2865ac099b81f458d3faf00ba9f8e7, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60743/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba2865ac099b81f458d3faf00ba9f8e7
 
-testCases.ManageExpensesTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageExpensesTestCases.verifyManageExpensePageLoad()[pri:0, instance:testCases.ManageExpensesTestCases@1eb5174b] output={null}]](0)  Time elapsed: 31.142 s  <<< FAILURE!
+testCases.ExpenseCategoryTestCases.EditExpenseCategory  Time elapsed: 0.261 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99d4d4df6067b60ff3ccf22eea39af2a, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49905/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99d4d4df6067b60ff3ccf22eea39af2a
+Command: [03c82badb69f73ec4f55a74453b1d387, findElement {using=xpath, value=//input[@name='username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60824/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03c82badb69f73ec4f55a74453b1d387
+	at testCases.ExpenseCategoryTestCases.EditExpenseCategory(ExpenseCategoryTestCases.java:80)
 
-testCases.AdminUserTestCases.afterMethod[[TestResult name={null} status=CREATED method=AdminUserTestCases.verifyCreateNewUser()[pri:0, instance:testCases.AdminUserTestCases@40cb8df7] output={null}]](0)  Time elapsed: 31.151 s  <<< FAILURE!
+testCases.LoginTestCases.verifyCheckBox  Time elapsed: 0.269 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99d4d4df6067b60ff3ccf22eea39af2a, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49905/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99d4d4df6067b60ff3ccf22eea39af2a
+Command: [03c82badb69f73ec4f55a74453b1d387, isElementSelected {id=55a843aa-93d3-4301-a0b8-ce8f39c07c10}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60824/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (03c82badb69f73ec4f55a74453b1d387)] -> xpath: //input[@id='remember']]
+Session ID: 03c82badb69f73ec4f55a74453b1d387
+	at testCases.LoginTestCases.verifyCheckBox(LoginTestCases.java:60)
 
-testCases.ExpenseCategoryTestCases.EditExpenseCategory  Time elapsed: 0.559 s  <<< FAILURE!
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name=EditExpenseCategory status=FAILURE method=ExpenseCategoryTestCases.EditExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 0.286 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [093b787e950336b6ad665cd50713c956, findElement {using=xpath, value=//input[@name='password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49988/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093b787e950336b6ad665cd50713c956
-	at testCases.ExpenseCategoryTestCases.EditExpenseCategory(ExpenseCategoryTestCases.java:81)
+Command: [03c82badb69f73ec4f55a74453b1d387, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60824/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03c82badb69f73ec4f55a74453b1d387
 
-testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name=EditExpenseCategory status=FAILURE method=ExpenseCategoryTestCases.EditExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@120f102b] output={null}]](0)  Time elapsed: 0.564 s  <<< FAILURE!
+testCases.LoginTestCases.afterMethod[[TestResult name=verifyCheckBox status=FAILURE method=LoginTestCases.verifyCheckBox()[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 0.286 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [093b787e950336b6ad665cd50713c956, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49988/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093b787e950336b6ad665cd50713c956
+Command: [03c82badb69f73ec4f55a74453b1d387, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60824/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03c82badb69f73ec4f55a74453b1d387
 
-testCases.ManageExpensesTestCases.launchBrowser  Time elapsed: 2.026 s  <<< FAILURE!
+testCases.ManageExpensesTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageExpensesTestCases.verifyNewSearchResetButtonFontSize()[pri:0, instance:testCases.ManageExpensesTestCases@69e1dd28] output={null}]](0)  Time elapsed: 26.568 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [093b787e950336b6ad665cd50713c956, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49988/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093b787e950336b6ad665cd50713c956
+Command: [2e5162f4391dd568eeefaabe35928e1b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60926/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e5162f4391dd568eeefaabe35928e1b
 
-testCases.ManageExpensesTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageExpensesTestCases.verifyNewSearchResetButtonFontColor()[pri:0, instance:testCases.ManageExpensesTestCases@1eb5174b] output={null}]](0)  Time elapsed: 2.027 s  <<< FAILURE!
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.addNewExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 26.568 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [093b787e950336b6ad665cd50713c956, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49988}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49988/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 093b787e950336b6ad665cd50713c956
+Command: [2e5162f4391dd568eeefaabe35928e1b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60926/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e5162f4391dd568eeefaabe35928e1b
 
-testCases.ExpenseCategoryTestCases.launchBrowser  Time elapsed: 0.461 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.LoginTestCases.launchBrowser  Time elapsed: 37.375 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea3d51883e7c21e8b4776ab4cef11bcc, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50139/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea3d51883e7c21e8b4776ab4cef11bcc
+Command: [0f6350b42f1462b726f0df1bdd7a2466, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.addNewExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@120f102b] output={null}]](0)  Time elapsed: 0.461 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 37.375 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea3d51883e7c21e8b4776ab4cef11bcc, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50139/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea3d51883e7c21e8b4776ab4cef11bcc
+Command: [0f6350b42f1462b726f0df1bdd7a2466, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.LoginTestCases.verifyLoginForInValidUser  Time elapsed: 2.666 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ManageProductTestCases.launchBrowser  Time elapsed: 38.204 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea3d51883e7c21e8b4776ab4cef11bcc, findElement {using=xpath, value=//input[@name='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50139/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ea3d51883e7c21e8b4776ab4cef11bcc
-	at testCases.LoginTestCases.verifyLoginForInValidUser(LoginTestCases.java:50)
+Command: [0f6350b42f1462b726f0df1bdd7a2466, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.ManageProductTestCases.launchBrowser  Time elapsed: 56.556 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ManageProductTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageProductTestCases.verifyAddNewProductPageDefaultCheckboxValuesSelected()[pri:0, instance:testCases.ManageProductTestCases@11bd0f3b] output={null}]](0)  Time elapsed: 38.212 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f7b9d793aef5b1ba496a0f415970e32, setTimeout {implicit=5000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f7b9d793aef5b1ba496a0f415970e32
+Command: [0f6350b42f1462b726f0df1bdd7a2466, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.ExpenseCategoryTestCases.launchBrowser  Time elapsed: 56.556 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ExpenseCategoryTestCases.launchBrowser  Time elapsed: 38.541 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f7b9d793aef5b1ba496a0f415970e32, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f7b9d793aef5b1ba496a0f415970e32
+Command: [0f6350b42f1462b726f0df1bdd7a2466, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.verifyNewSearchResetButtonColors()[pri:0, instance:testCases.ExpenseCategoryTestCases@120f102b] output={null}]](0)  Time elapsed: 56.556 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.deleteExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 38.547 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f7b9d793aef5b1ba496a0f415970e32, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f7b9d793aef5b1ba496a0f415970e32
+Command: [0f6350b42f1462b726f0df1bdd7a2466, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f6350b42f1462b726f0df1bdd7a2466
 
-testCases.ManageProductTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageProductTestCases.verifyAddNewProductPageDefaultCheckboxValuesSelected()[pri:0, instance:testCases.ManageProductTestCases@67080771] output={null}]](0)  Time elapsed: 56.556 s  <<< FAILURE!
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.searchExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 46.998 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f7b9d793aef5b1ba496a0f415970e32, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0f7b9d793aef5b1ba496a0f415970e32
+Command: [7d7aac93756296bbaef40ffe6835b864, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61111/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7aac93756296bbaef40ffe6835b864
 
-testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.verifyExpenseCategoryPageIsLoaded()[pri:1, instance:testCases.ExpenseCategoryTestCases@120f102b] output={null}]](0)  Time elapsed: 92.934 s  <<< FAILURE!
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 46.999 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17f2d4d8f069b9587e224ab68dcd7048, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50438/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 17f2d4d8f069b9587e224ab68dcd7048
+Command: [7d7aac93756296bbaef40ffe6835b864, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61111/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7aac93756296bbaef40ffe6835b864
 
-testCases.LoginTestCases.launchBrowser  Time elapsed: 95.018 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ExpenseCategoryTestCases.launchBrowser  Time elapsed: 52.289 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17f2d4d8f069b9587e224ab68dcd7048, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50438/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 17f2d4d8f069b9587e224ab68dcd7048
+Command: [3445e02bad14a6349e69de4b7c5f582f, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
 
-testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@13b13b5d] output={null}]](0)  Time elapsed: 95.018 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ManageProductTestCases.launchBrowser  Time elapsed: 52.289 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17f2d4d8f069b9587e224ab68dcd7048, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50438/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 17f2d4d8f069b9587e224ab68dcd7048
+Command: [3445e02bad14a6349e69de4b7c5f582f, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
 
-testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@13b13b5d] output={null}]](0)  Time elapsed: 133.68 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.LoginTestCases.launchBrowser  Time elapsed: 52.29 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e7d9d50a1385529098b6e5d61fff3873, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50550}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50550/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e7d9d50a1385529098b6e5d61fff3873
+Command: [3445e02bad14a6349e69de4b7c5f582f, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
 
-testCases.ManageProductTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageProductTestCases.verifyManageProductURL()[pri:0, instance:testCases.ManageProductTestCases@67080771] output={null}]](0)  Time elapsed: 1,514.018 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
+testCases.ManageProductTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageProductTestCases.verifyManageProductPageisLoaded()[pri:0, instance:testCases.ManageProductTestCases@11bd0f3b] output={null}]](0)  Time elapsed: 52.295 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [318334741e3f2375b6dbbf2e2400c7db, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50593/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 318334741e3f2375b6dbbf2e2400c7db
+Command: [3445e02bad14a6349e69de4b7c5f582f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
 
-testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifySignInButtonColor()[pri:0, instance:testCases.LoginTestCases@13b13b5d] output={null}]](0)  Time elapsed: 1,514.05 s  <<< FAILURE!
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.verifyNewSearchResetButtonColors()[pri:0, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 52.295 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3445e02bad14a6349e69de4b7c5f582f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 52.295 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3445e02bad14a6349e69de4b7c5f582f, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61205/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3445e02bad14a6349e69de4b7c5f582f
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+testCases.ExpenseCategoryTestCases.afterMethod[[TestResult name={null} status=CREATED method=ExpenseCategoryTestCases.verifyExpenseCategoryPageIsLoaded()[pri:1, instance:testCases.ExpenseCategoryTestCases@1ba9117e] output={null}]](0)  Time elapsed: 55.926 s  <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.7', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b296ad4d9e99b8c7d3045bf7d7219d09, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50669/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b296ad4d9e99b8c7d3045bf7d7219d09
+Command: [d78f2639e08fb138a79e190c528e53d2, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61308/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d78f2639e08fb138a79e190c528e53d2
+
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 55.926 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d78f2639e08fb138a79e190c528e53d2, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61308}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61308/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d78f2639e08fb138a79e190c528e53d2
+
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifySignInButtonColor()[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 60.214 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [834f10b5fd66724fc7aa54156c1276bf, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61388/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 834f10b5fd66724fc7aa54156c1276bf
+
+testCases.LoginTestCases.launchBrowser  Time elapsed: 67.453 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8025c6b53fc9dd66754df00a9d76cbb1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61434/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8025c6b53fc9dd66754df00a9d76cbb1
+
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifySignInButtonText()[pri:0, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 67.468 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8025c6b53fc9dd66754df00a9d76cbb1, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61434/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8025c6b53fc9dd66754df00a9d76cbb1
+
+testCases.ManageProductTestCases.launchBrowser  Time elapsed: 68.035 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8025c6b53fc9dd66754df00a9d76cbb1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61434/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8025c6b53fc9dd66754df00a9d76cbb1
+
+testCases.ManageProductTestCases.afterMethod[[TestResult name={null} status=CREATED method=ManageProductTestCases.verifyProductSearchPageLoad()[pri:0, instance:testCases.ManageProductTestCases@11bd0f3b] output={null}]](0)  Time elapsed: 68.055 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8025c6b53fc9dd66754df00a9d76cbb1, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61434/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8025c6b53fc9dd66754df00a9d76cbb1
+
+testCases.LoginTestCases.launchBrowser  Time elapsed: 70.671 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2e01fd4baca1ad5c11b1b42ec185314, get {url=https://groceryapp.uniqassosiates.com/admin/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61478}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61478/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2e01fd4baca1ad5c11b1b42ec185314
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+
+testCases.LoginTestCases.afterMethod[[TestResult name={null} status=CREATED method=LoginTestCases.verifyLoginForValidUser()[pri:1, instance:testCases.LoginTestCases@52102734] output={null}]](0)  Time elapsed: 70.675 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-U6D9EGH', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2e01fd4baca1ad5c11b1b42ec185314, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\JOSSY\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61478}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61478/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2e01fd4baca1ad5c11b1b42ec185314
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
+Caused by: java.net.ConnectException: Connection refused: no further information
 

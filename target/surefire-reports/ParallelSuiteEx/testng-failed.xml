@@ -8,24 +8,24 @@
     <classes>
       <class name="testCases.HomePageTestCases">
         <methods>
-          <include name="launch_Browser"/>
           <include name="verifyUserLogout"/>
-          <include name="launchBrowser"/>
           <include name="verifyHomePageTitle"/>
           <include name="verifyHomePageURL"/>
+          <include name="launch_Browser"/>
           <include name="afterMethod"/>
+          <include name="launchBrowser"/>
         </methods>
       </class> <!-- testCases.HomePageTestCases -->
       <class name="testCases.ExpenseCategoryTestCases">
         <methods>
           <include name="addNewExpenseCategory"/>
-          <include name="launch_Browser"/>
-          <include name="launchBrowser"/>
           <include name="EditExpenseCategory"/>
           <include name="deleteExpenseCategory"/>
+          <include name="launch_Browser"/>
+          <include name="afterMethod"/>
+          <include name="launchBrowser"/>
           <include name="verifyNewSearchResetButtonColors"/>
           <include name="verifyExpenseCategoryPageIsLoaded"/>
-          <include name="afterMethod"/>
           <include name="searchExpenseCategory"/>
         </methods>
       </class> <!-- testCases.ExpenseCategoryTestCases -->
@@ -33,55 +33,56 @@
   </test> <!-- ParallelExecution3(failed) -->
   <test thread-count="4" parallel="tests" name="ParallelExecution2(failed)" verbose="0">
     <classes>
-      <class name="testCases.ManageExpensesTestCases">
-        <methods>
-          <include name="verifyAddExpenseFieldsPresence"/>
-          <include name="launch_Browser"/>
-          <include name="verifyManageExpensePageLoad"/>
-          <include name="launchBrowser"/>
-          <include name="verifyNewSearchResetButtonFontColor"/>
-          <include name="verifyNewSearchResetButtonFontSize"/>
-          <include name="verifyAddNewExpenseRecord"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testCases.ManageExpensesTestCases -->
       <class name="testCases.ManageProductTestCases">
         <methods>
-          <include name="launch_Browser"/>
           <include name="verifyManageProductTitle"/>
-          <include name="launchBrowser"/>
           <include name="verifyManageProductPageisLoaded"/>
+          <include name="launch_Browser"/>
+          <include name="afterMethod"/>
           <include name="verifyProductSearchPageLoad"/>
+          <include name="launchBrowser"/>
           <include name="verifyAddNewProductPageDefaultRadioButtonValues"/>
           <include name="verifyManageProductURL"/>
-          <include name="afterMethod"/>
           <include name="verifyAddNewProductPageDefaultCheckboxValuesSelected"/>
         </methods>
       </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.ManageExpensesTestCases">
+        <methods>
+          <include name="verifyAddExpenseFieldsPresence"/>
+          <include name="verifyManageExpensePageLoad"/>
+          <include name="verifyNewSearchResetButtonFontColor"/>
+          <include name="verifyNewSearchResetButtonFontSize"/>
+          <include name="launch_Browser"/>
+          <include name="afterMethod"/>
+          <include name="launchBrowser"/>
+          <include name="verifyAddNewExpenseRecord"/>
+        </methods>
+      </class> <!-- testCases.ManageExpensesTestCases -->
     </classes>
   </test> <!-- ParallelExecution2(failed) -->
   <test thread-count="4" parallel="tests" name="ParallelExecution1(failed)" verbose="0">
     <classes>
       <class name="testCases.LoginTestCases">
         <methods>
-          <include name="launch_Browser"/>
           <include name="verifyLoginForValidUser"/>
           <include name="verifyLoginForInValidUser"/>
           <include name="verifySignInButtonText"/>
-          <include name="launchBrowser"/>
+          <include name="verifyCheckBox"/>
           <include name="verifyLoginForInValidUserwithExcelDataProvider"/>
-          <include name="verifySignInButtonColor"/>
+          <include name="launch_Browser"/>
           <include name="afterMethod"/>
+          <include name="launchBrowser"/>
+          <include name="verifySignInButtonColor"/>
         </methods>
       </class> <!-- testCases.LoginTestCases -->
       <class name="testCases.AdminUserTestCases">
         <methods>
-          <include name="launch_Browser"/>
-          <include name="launchBrowser"/>
           <include name="verifyCreateNewUser"/>
+          <include name="launch_Browser"/>
+          <include name="afterMethod"/>
+          <include name="launchBrowser"/>
           <include name="verifyAdminUserPageURL"/>
           <include name="verifyAdminUserPageTitle"/>
-          <include name="afterMethod"/>
         </methods>
       </class> <!-- testCases.AdminUserTestCases -->
     </classes>

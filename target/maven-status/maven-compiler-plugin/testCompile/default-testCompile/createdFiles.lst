@@ -1,8 +1,9 @@
 testCases\HomePageTestCases.class
 testCases\ManageProductTestCases.class
+DataProviders\DataProviderClass.class
 testCases\ExpenseCategoryTestCases.class
 testCases\AdminUserTestCases.class
-testCases\BaseClass.class
 testCases\LoginTestCases.class
 testCases\ManageExpensesTestCases.class
+BaseClass\BaseClass.class
 constants\Constants.class

@@ -33,4 +33,18 @@ public class Constants {
 	public static final String MANAGEPRODUCTPAGE_URL = "https://groceryapp.uniqassosiates.com/admin/list-product";
 	
 	public static final String SELECTION_ERROR = "Not Selected" ;
+	
+	public static final String USER_CREATION_MESSAGE = "New User Created";
+	
+	public static final String BUTTON_COLOR_MESSAGE = "Button color is as expected";
+	
+	public static final String ALERT_MESSAGE = "Alert same as expected";
+	
+	public static final String FONTSIZE_MESSAGE = " font size is as expected";
+	
+	public static final String NEW_BUTTON_COLOR = "rgba(220, 53, 69, 1)";
+	
+	public static final String SEARCH_BUTTON_COLOR = "rgba(0, 123, 255, 1)";
+	
+	public static final String RESET_BUTTON_COLOR = "rgba(255, 193, 7, 1)";
 }

@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="32" passed="32" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-13T14:43:08Z" name="Default suite" finished-at="2023-03-13T14:43:12Z" duration-ms="3451">
+  <suite started-at="2023-03-14T18:00:58Z" name="Default suite" finished-at="2023-03-14T18:03:38Z" duration-ms="159867">
     <groups>
+      <group name="Critical">
+        <method signature="AdminUserTestCases.verifyCreateNewUser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" name="verifyCreateNewUser" class="testCases.AdminUserTestCases"/>
+        <method signature="LoginTestCases.verifyLoginForValidUser()[pri:1, instance:testCases.LoginTestCases@31920ade]" name="verifyLoginForValidUser" class="testCases.LoginTestCases"/>
+      </group> <!-- Critical -->
     </groups>
-    <test started-at="2023-03-13T14:43:08Z" name="Default test" finished-at="2023-03-13T14:43:12Z" duration-ms="3451">
+    <test started-at="2023-03-14T18:00:58Z" name="Default test" finished-at="2023-03-14T18:03:38Z" duration-ms="159867">
       <class name="testCases.AdminUserTestCases">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.AdminUserTestCases@2e48362c]" started-at="2023-03-13T14:43:08Z" name="launchBrowser" finished-at="2023-03-13T14:43:10Z" duration-ms="2241" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:00:58Z" name="launchBrowser" finished-at="2023-03-14T18:01:05Z" duration-ms="6760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyAdminUserPageURL()[pri:0, instance:testCases.AdminUserTestCases@2e48362c]" started-at="2023-03-13T14:43:10Z" name="verifyAdminUserPageURL" finished-at="2023-03-13T14:43:11Z" duration-ms="1007" status="PASS">
+        <test-method signature="verifyAdminUserPageTitle()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:05Z" name="verifyAdminUserPageTitle" finished-at="2023-03-14T18:01:07Z" duration-ms="1835" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdminUserPageURL -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUserTestCases@2e48362c]" started-at="2023-03-13T14:43:11Z" name="afterMethod" finished-at="2023-03-13T14:43:12Z" duration-ms="171" status="PASS">
+        </test-method> <!-- verifyAdminUserPageTitle -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:07Z" name="afterMethod" finished-at="2023-03-14T18:01:07Z" duration-ms="337" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAdminUserPageURL status=SUCCESS method=AdminUserTestCases.verifyAdminUserPageURL()[pri:0, instance:testCases.AdminUserTestCases@2e48362c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAdminUserPageTitle status=SUCCESS method=AdminUserTestCases.verifyAdminUserPageTitle()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:07Z" name="launchBrowser" finished-at="2023-03-14T18:01:11Z" duration-ms="3308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAdminUserPageURL()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:11Z" name="verifyAdminUserPageURL" finished-at="2023-03-14T18:01:12Z" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserPageURL -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:12Z" name="afterMethod" finished-at="2023-03-14T18:01:13Z" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminUserPageURL status=SUCCESS method=AdminUserTestCases.verifyAdminUserPageURL()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:13Z" name="launchBrowser" finished-at="2023-03-14T18:01:15Z" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCreateNewUser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:15Z" name="verifyCreateNewUser" finished-at="2023-03-14T18:01:19Z" duration-ms="3388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewUser -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f]" started-at="2023-03-14T18:01:19Z" name="afterMethod" finished-at="2023-03-14T18:01:19Z" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateNewUser status=SUCCESS method=AdminUserTestCases.verifyCreateNewUser()[pri:0, instance:testCases.AdminUserTestCases@7ef27d7f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -27,6 +69,615 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testCases.AdminUserTestCases -->
+      <class name="testCases.ManageProductTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:19Z" name="launchBrowser" finished-at="2023-03-14T18:01:22Z" duration-ms="2750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAddNewProductPageDefaultCheckboxValuesSelected()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:22Z" name="verifyAddNewProductPageDefaultCheckboxValuesSelected" finished-at="2023-03-14T18:01:24Z" duration-ms="2630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewProductPageDefaultCheckboxValuesSelected -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:24Z" name="afterMethod" finished-at="2023-03-14T18:01:25Z" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddNewProductPageDefaultCheckboxValuesSelected status=SUCCESS method=ManageProductTestCases.verifyAddNewProductPageDefaultCheckboxValuesSelected()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:25Z" name="launchBrowser" finished-at="2023-03-14T18:01:27Z" duration-ms="2623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAddNewProductPageDefaultRadioButtonValues()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:27Z" name="verifyAddNewProductPageDefaultRadioButtonValues" finished-at="2023-03-14T18:01:30Z" duration-ms="2866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewProductPageDefaultRadioButtonValues -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:30Z" name="afterMethod" finished-at="2023-03-14T18:01:30Z" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddNewProductPageDefaultRadioButtonValues status=SUCCESS method=ManageProductTestCases.verifyAddNewProductPageDefaultRadioButtonValues()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:30Z" name="launchBrowser" finished-at="2023-03-14T18:01:33Z" duration-ms="2868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyManageProductPageisLoaded()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:33Z" name="verifyManageProductPageisLoaded" finished-at="2023-03-14T18:01:35Z" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageProductPageisLoaded -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:35Z" name="afterMethod" finished-at="2023-03-14T18:01:35Z" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageProductPageisLoaded status=SUCCESS method=ManageProductTestCases.verifyManageProductPageisLoaded()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:35Z" name="launchBrowser" finished-at="2023-03-14T18:01:38Z" duration-ms="2631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyManageProductTitle()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:38Z" name="verifyManageProductTitle" finished-at="2023-03-14T18:01:39Z" duration-ms="1620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageProductTitle -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:39Z" name="afterMethod" finished-at="2023-03-14T18:01:40Z" duration-ms="251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageProductTitle status=SUCCESS method=ManageProductTestCases.verifyManageProductTitle()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:40Z" name="launchBrowser" finished-at="2023-03-14T18:01:42Z" duration-ms="2575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyManageProductURL()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:42Z" name="verifyManageProductURL" finished-at="2023-03-14T18:01:44Z" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageProductURL -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:44Z" name="afterMethod" finished-at="2023-03-14T18:01:44Z" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageProductURL status=SUCCESS method=ManageProductTestCases.verifyManageProductURL()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:44Z" name="launchBrowser" finished-at="2023-03-14T18:01:47Z" duration-ms="2889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyProductSearchPageLoad()[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:47Z" name="verifyProductSearchPageLoad" finished-at="2023-03-14T18:01:49Z" duration-ms="1923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearchPageLoad -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@490caf5f]" started-at="2023-03-14T18:01:49Z" name="afterMethod" finished-at="2023-03-14T18:01:49Z" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductSearchPageLoad status=SUCCESS method=ManageProductTestCases.verifyProductSearchPageLoad()[pri:0, instance:testCases.ManageProductTestCases@490caf5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.HomePageTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:49Z" name="launchBrowser" finished-at="2023-03-14T18:01:52Z" duration-ms="2694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:52Z" name="verifyHomePageTitle" finished-at="2023-03-14T18:01:53Z" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:53Z" name="afterMethod" finished-at="2023-03-14T18:01:53Z" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=HomePageTestCases.verifyHomePageTitle()[pri:0, instance:testCases.HomePageTestCases@6337c201] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:53Z" name="launchBrowser" finished-at="2023-03-14T18:01:56Z" duration-ms="2643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyHomePageURL()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:56Z" name="verifyHomePageURL" finished-at="2023-03-14T18:01:57Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageURL -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:57Z" name="afterMethod" finished-at="2023-03-14T18:01:57Z" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageURL status=SUCCESS method=HomePageTestCases.verifyHomePageURL()[pri:0, instance:testCases.HomePageTestCases@6337c201] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:01:57Z" name="launchBrowser" finished-at="2023-03-14T18:02:00Z" duration-ms="2662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyUserLogout()[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:02:00Z" name="verifyUserLogout" finished-at="2023-03-14T18:02:01Z" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTestCases@6337c201]" started-at="2023-03-14T18:02:01Z" name="afterMethod" finished-at="2023-03-14T18:02:01Z" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLogout status=SUCCESS method=HomePageTestCases.verifyUserLogout()[pri:0, instance:testCases.HomePageTestCases@6337c201] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.HomePageTestCases -->
+      <class name="testCases.ExpenseCategoryTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:01Z" name="launchBrowser" finished-at="2023-03-14T18:02:04Z" duration-ms="2632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="EditExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:04Z" name="EditExpenseCategory" finished-at="2023-03-14T18:02:07Z" duration-ms="3099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditExpenseCategory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:07Z" name="afterMethod" finished-at="2023-03-14T18:02:07Z" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EditExpenseCategory status=SUCCESS method=ExpenseCategoryTestCases.EditExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:07Z" name="launchBrowser" finished-at="2023-03-14T18:02:10Z" duration-ms="2605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addNewExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:10Z" name="addNewExpenseCategory" finished-at="2023-03-14T18:02:13Z" duration-ms="2736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewExpenseCategory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:13Z" name="afterMethod" finished-at="2023-03-14T18:02:13Z" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewExpenseCategory status=SUCCESS method=ExpenseCategoryTestCases.addNewExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:13Z" name="launchBrowser" finished-at="2023-03-14T18:02:16Z" duration-ms="2571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="deleteExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:16Z" name="deleteExpenseCategory" finished-at="2023-03-14T18:02:18Z" duration-ms="2465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteExpenseCategory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:18Z" name="afterMethod" finished-at="2023-03-14T18:02:18Z" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteExpenseCategory status=SUCCESS method=ExpenseCategoryTestCases.deleteExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:18Z" name="launchBrowser" finished-at="2023-03-14T18:02:21Z" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="searchExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:21Z" name="searchExpenseCategory" finished-at="2023-03-14T18:02:24Z" duration-ms="2610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchExpenseCategory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:24Z" name="afterMethod" finished-at="2023-03-14T18:02:24Z" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchExpenseCategory status=SUCCESS method=ExpenseCategoryTestCases.searchExpenseCategory()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:24Z" name="launchBrowser" finished-at="2023-03-14T18:02:26Z" duration-ms="2673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewSearchResetButtonColors()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:26Z" name="verifyNewSearchResetButtonColors" finished-at="2023-03-14T18:02:28Z" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSearchResetButtonColors -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:02:28Z" name="afterMethod" finished-at="2023-03-14T18:02:29Z" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSearchResetButtonColors status=SUCCESS method=ExpenseCategoryTestCases.verifyNewSearchResetButtonColors()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:03:29Z" name="launchBrowser" finished-at="2023-03-14T18:03:32Z" duration-ms="2609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyExpenseCategoryPageIsLoaded()[pri:1, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:03:32Z" name="verifyExpenseCategoryPageIsLoaded" finished-at="2023-03-14T18:03:34Z" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyExpenseCategoryPageIsLoaded -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ExpenseCategoryTestCases@5c669da8]" started-at="2023-03-14T18:03:34Z" name="afterMethod" finished-at="2023-03-14T18:03:34Z" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyExpenseCategoryPageIsLoaded status=SUCCESS method=ExpenseCategoryTestCases.verifyExpenseCategoryPageIsLoaded()[pri:1, instance:testCases.ExpenseCategoryTestCases@5c669da8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ExpenseCategoryTestCases -->
+      <class name="testCases.LoginTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:29Z" name="launchBrowser" finished-at="2023-03-14T18:02:31Z" duration-ms="2680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCheckBox()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:31Z" name="verifyCheckBox" finished-at="2023-03-14T18:02:31Z" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckBox -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:31Z" name="afterMethod" finished-at="2023-03-14T18:02:31Z" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckBox status=SUCCESS method=LoginTestCases.verifyCheckBox()[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:31Z" name="launchBrowser" finished-at="2023-03-14T18:02:34Z" duration-ms="2554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForInValidUser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:34Z" name="verifyLoginForInValidUser" finished-at="2023-03-14T18:02:36Z" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForInValidUser -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:36Z" name="afterMethod" finished-at="2023-03-14T18:02:36Z" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForInValidUser status=SUCCESS method=LoginTestCases.verifyLoginForInValidUser()[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:37Z" name="launchBrowser" finished-at="2023-03-14T18:02:39Z" duration-ms="2589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:39Z" name="verifyLoginForInValidUserwithExcelDataProvider" data-provider="loginData" finished-at="2023-03-14T18:02:40Z" duration-ms="919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pppp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForInValidUserwithExcelDataProvider -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:40Z" name="afterMethod" finished-at="2023-03-14T18:02:40Z" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForInValidUserwithExcelDataProvider status=SUCCESS method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:40Z" name="launchBrowser" finished-at="2023-03-14T18:02:43Z" duration-ms="2620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:43Z" name="verifyLoginForInValidUserwithExcelDataProvider" data-provider="loginData" finished-at="2023-03-14T18:02:44Z" duration-ms="903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[neena]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[neena]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForInValidUserwithExcelDataProvider -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:44Z" name="afterMethod" finished-at="2023-03-14T18:02:44Z" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForInValidUserwithExcelDataProvider status=SUCCESS method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:44Z" name="launchBrowser" finished-at="2023-03-14T18:02:47Z" duration-ms="2989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:47Z" name="verifyLoginForInValidUserwithExcelDataProvider" data-provider="loginData" finished-at="2023-03-14T18:02:48Z" duration-ms="880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForInValidUserwithExcelDataProvider -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:48Z" name="afterMethod" finished-at="2023-03-14T18:02:48Z" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForInValidUserwithExcelDataProvider status=SUCCESS method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:48Z" name="launchBrowser" finished-at="2023-03-14T18:02:51Z" duration-ms="2682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:51Z" name="verifyLoginForInValidUserwithExcelDataProvider" data-provider="loginData" finished-at="2023-03-14T18:02:52Z" duration-ms="893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[$yamala]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForInValidUserwithExcelDataProvider -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:52Z" name="afterMethod" finished-at="2023-03-14T18:02:52Z" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForInValidUserwithExcelDataProvider status=SUCCESS method=LoginTestCases.verifyLoginForInValidUserwithExcelDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:52Z" name="launchBrowser" finished-at="2023-03-14T18:02:55Z" duration-ms="2834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySignInButtonColor()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:55Z" name="verifySignInButtonColor" finished-at="2023-03-14T18:02:55Z" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInButtonColor -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:55Z" name="afterMethod" finished-at="2023-03-14T18:02:55Z" duration-ms="216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignInButtonColor status=SUCCESS method=LoginTestCases.verifySignInButtonColor()[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:55Z" name="launchBrowser" finished-at="2023-03-14T18:02:58Z" duration-ms="2762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySignInButtonText()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:58Z" name="verifySignInButtonText" finished-at="2023-03-14T18:02:58Z" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInButtonText -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:02:58Z" name="afterMethod" finished-at="2023-03-14T18:02:58Z" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignInButtonText status=SUCCESS method=LoginTestCases.verifySignInButtonText()[pri:0, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:03:34Z" name="launchBrowser" finished-at="2023-03-14T18:03:37Z" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginForValidUser()[pri:1, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:03:37Z" name="verifyLoginForValidUser" finished-at="2023-03-14T18:03:38Z" duration-ms="1140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginForValidUser -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.LoginTestCases@31920ade]" started-at="2023-03-14T18:03:38Z" name="afterMethod" finished-at="2023-03-14T18:03:38Z" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginForValidUser status=SUCCESS method=LoginTestCases.verifyLoginForValidUser()[pri:1, instance:testCases.LoginTestCases@31920ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.ManageExpensesTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:02:58Z" name="launchBrowser" finished-at="2023-03-14T18:03:01Z" duration-ms="2651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAddExpenseFieldsPresence()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:01Z" name="verifyAddExpenseFieldsPresence" finished-at="2023-03-14T18:03:04Z" duration-ms="2773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddExpenseFieldsPresence -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:04Z" name="afterMethod" finished-at="2023-03-14T18:03:04Z" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddExpenseFieldsPresence status=SUCCESS method=ManageExpensesTestCases.verifyAddExpenseFieldsPresence()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:04Z" name="launchBrowser" finished-at="2023-03-14T18:03:06Z" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAddNewExpenseRecord()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:06Z" name="verifyAddNewExpenseRecord" finished-at="2023-03-14T18:03:14Z" duration-ms="7291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNewExpenseRecord -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:14Z" name="afterMethod" finished-at="2023-03-14T18:03:14Z" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddNewExpenseRecord status=SUCCESS method=ManageExpensesTestCases.verifyAddNewExpenseRecord()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:14Z" name="launchBrowser" finished-at="2023-03-14T18:03:17Z" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyManageExpensePageLoad()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:17Z" name="verifyManageExpensePageLoad" finished-at="2023-03-14T18:03:19Z" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageExpensePageLoad -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:19Z" name="afterMethod" finished-at="2023-03-14T18:03:19Z" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManageExpensePageLoad status=SUCCESS method=ManageExpensesTestCases.verifyManageExpensePageLoad()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:19Z" name="launchBrowser" finished-at="2023-03-14T18:03:22Z" duration-ms="2648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewSearchResetButtonFontColor()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:22Z" name="verifyNewSearchResetButtonFontColor" finished-at="2023-03-14T18:03:24Z" duration-ms="2081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSearchResetButtonFontColor -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:24Z" name="afterMethod" finished-at="2023-03-14T18:03:24Z" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSearchResetButtonFontColor status=SUCCESS method=ManageExpensesTestCases.verifyNewSearchResetButtonFontColor()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:24Z" name="launchBrowser" finished-at="2023-03-14T18:03:27Z" duration-ms="3088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewSearchResetButtonFontSize()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:27Z" name="verifyNewSearchResetButtonFontSize" finished-at="2023-03-14T18:03:29Z" duration-ms="1951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSearchResetButtonFontSize -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4]" started-at="2023-03-14T18:03:29Z" name="afterMethod" finished-at="2023-03-14T18:03:29Z" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSearchResetButtonFontSize status=SUCCESS method=ManageExpensesTestCases.verifyNewSearchResetButtonFontSize()[pri:0, instance:testCases.ManageExpensesTestCases@1d483de4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageExpensesTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

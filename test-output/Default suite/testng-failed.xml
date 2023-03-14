@@ -5,10 +5,10 @@
     <classes>
       <class name="testCases.AdminUserTestCases">
         <methods>
+          <include name="verifyCreateNewUser"/>
           <include name="launch_Browser"/>
           <include name="afterMethod"/>
           <include name="launchBrowser"/>
-          <include name="verifyAdminUserPageURL"/>
         </methods>
       </class> <!-- testCases.AdminUserTestCases -->
     </classes>

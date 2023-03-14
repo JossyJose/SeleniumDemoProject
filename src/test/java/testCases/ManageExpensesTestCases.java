@@ -38,9 +38,10 @@ public class ManageExpensesTestCases extends BaseClass {
 		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
 		manageExpenses.loadManageExpense();
 		manageExpenses.loadListExpenses();
-		Assert.assertEquals(manageExpenses.getNewBtnFontSize(), "16px", " font size is as expected");
-		Assert.assertEquals(manageExpenses.getSearchBtnFontSize(), "16px", " font size is as expected");
-		Assert.assertEquals(manageExpenses.getResetBtnFontsize(), "16px", " font size is as expected");
+		String expectedFontSize = "16px";
+		Assert.assertEquals(manageExpenses.getNewBtnFontSize(), expectedFontSize, Constants.FONTSIZE_MESSAGE);
+		Assert.assertEquals(manageExpenses.getSearchBtnFontSize(), expectedFontSize, Constants.FONTSIZE_MESSAGE);
+		Assert.assertEquals(manageExpenses.getResetBtnFontsize(), expectedFontSize, Constants.FONTSIZE_MESSAGE);
 	}
 
 	@Test(enabled = true)
@@ -50,10 +51,10 @@ public class ManageExpensesTestCases extends BaseClass {
 		loginPage.performLogin(Constants.USERNAME, Constants.PASSWORD);
 		manageExpenses.loadManageExpense();
 		manageExpenses.loadListExpenses();
-		Assert.assertEquals(manageExpenses.getNewBtnFontColor(), "rgba(220, 53, 69, 1)", " New btn font color is as expected");
-		Assert.assertEquals(manageExpenses.getSearchBtnFontColor(), "rgba(0, 123, 255, 1)",
-				" Search btn font color is as expected");
-		Assert.assertEquals(manageExpenses.getResetBtnFontColor(), "rgba(255, 193, 7, 1)", " Reset btn font color is as expected");
+		Assert.assertEquals(manageExpenses.getNewBtnFontColor(), Constants.NEW_BUTTON_COLOR, Constants.BUTTON_COLOR_MESSAGE);
+		Assert.assertEquals(manageExpenses.getSearchBtnFontColor(), Constants.SEARCH_BUTTON_COLOR,
+				Constants.BUTTON_COLOR_MESSAGE);
+		Assert.assertEquals(manageExpenses.getResetBtnFontColor(), Constants.RESET_BUTTON_COLOR, Constants.BUTTON_COLOR_MESSAGE);
 
 	}
 

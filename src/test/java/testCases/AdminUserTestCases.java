@@ -44,6 +44,6 @@ public class AdminUserTestCases extends BaseClass {
 		adminUser.clickSaveButton("usename"+ LocalDateTime.now().getSecond(),"pword", "Staff");
 		String actualUserType = adminUser.getUserType();
 		String expectedUserType = "staff";
-		Assert.assertEquals(actualUserType, expectedUserType, "New User created");
+		Assert.assertEquals(actualUserType, expectedUserType, Constants.USER_CREATION_MESSAGE);
 	}
 }

@@ -40,7 +40,7 @@ public class LoginTestCases extends BaseClass {
 		loginPage = new LoginPage(driver);
 		String actualColor = loginPage.getSignInButtonColor();
 		String expectedColor = "rgba(52, 58, 64, 1)";
-		Assert.assertEquals(actualColor, expectedColor, "Sign In button color is same as expected");
+		Assert.assertEquals(actualColor, expectedColor, Constants.BUTTON_COLOR_MESSAGE);
 	}
 
 	@Test(enabled = true)
@@ -51,7 +51,7 @@ public class LoginTestCases extends BaseClass {
 		loginPage.performLogin(user, pwd);
 		String actualAlert = loginPage.getAlertMsg();
 		String expectedAlert = "×\n" + "Alert!\n" + "Invalid Username/Password";
-		Assert.assertEquals(actualAlert, expectedAlert, "Alert same as expected");
+		Assert.assertEquals(actualAlert, expectedAlert, Constants.ALERT_MESSAGE);
 	}
 	
 	@Test
@@ -68,7 +68,7 @@ public class LoginTestCases extends BaseClass {
 		loginPage.performLogin(userName, password);
 		String actualAlert = loginPage.getAlertMsg();
 		String expectedAlert = "×\n" + "Alert!\n" + "Invalid Username/Password";
-		Assert.assertEquals(actualAlert, expectedAlert, "Alert not as expected");
+		Assert.assertEquals(actualAlert, expectedAlert,Constants.ALERT_MESSAGE);
 	}
 
 }

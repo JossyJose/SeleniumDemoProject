@@ -43,11 +43,8 @@ public class ExcelRead {
 	}
 
 	public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {
-
 		String[][] tabArray = null;
-
 		try {
-
 			FileInputStream ExcelFile = new FileInputStream(FilePath);
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(SheetName);
@@ -60,8 +57,7 @@ public class ExcelRead {
 			ci = 0;
 			for (int i = startRow; i <= totalRows; i++, ci++) {
 				cj = 0;
-				for (int j = startCol; j <= totalCols-1
-						; j++, cj++) {
+				for (int j = startCol; j <= totalCols - 1; j++, cj++) {
 					tabArray[ci][cj] = getCellData(i, j);
 					System.out.println(tabArray[ci][cj]);
 				}
