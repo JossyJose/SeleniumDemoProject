@@ -19,7 +19,7 @@ public class ExpenseCategoryTestCases extends BaseClass {
 	HomePage homePge;
 	ExpenseCategory expenseCategory;
 
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = true, priority = 1, groups = { "Critical" })
 	public void verifyExpenseCategoryPageIsLoaded() throws IOException {
 		loginPage = new LoginPage(driver);
 		expenseCategory = new ExpenseCategory(driver);

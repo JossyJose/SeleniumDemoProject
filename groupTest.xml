@@ -10,6 +10,7 @@
 		</groups>
 		<classes>
 			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.ExpenseCategoryTestCases"></class>
 		</classes>
 	</test>
 	

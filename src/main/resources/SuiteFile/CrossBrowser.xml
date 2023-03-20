@@ -23,8 +23,8 @@
 			<class name="testCases.HomePageTestCases"></class>
 		</classes>
 	</test>
-	<test name="Running in Firefox">
-		<parameter name="browser" value="firefox"></parameter>
+	<test name="Running in Chrome">
+		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="testCases.AdminUserTestCases"></class>
 			<class name="testCases.LoginTestCases"></class>

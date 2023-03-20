@@ -35,7 +35,7 @@ public class LoginTestCases extends BaseClass {
 		Assert.assertEquals(actualText, expectedText, "Successful Login");
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Critical" })
 	public void verifySignInButtonColor() {
 		loginPage = new LoginPage(driver);
 		String actualColor = loginPage.getSignInButtonColor();
@@ -43,7 +43,7 @@ public class LoginTestCases extends BaseClass {
 		Assert.assertEquals(actualColor, expectedColor, Constants.BUTTON_COLOR_MESSAGE);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Critical" })
 	public void verifyLoginForInValidUser() throws IOException {
 		loginPage = new LoginPage(driver);
 		String user = ExcelRead.getReadStringData(1, 0);
